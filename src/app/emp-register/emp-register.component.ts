@@ -59,13 +59,5 @@ export class EmpRegisterComponent {
     {
       alert("Registration failed Passwords don't match")
     }
-    if (this.pwd == "12345" && this.empid=="1122"){
-      alert("Registration successful")
-      console.log(empData)
-      this.router.navigate(['/'])
-    }else
-    {
-      alert("Invalid Access")
-    }
   }
 }

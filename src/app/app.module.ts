@@ -13,6 +13,8 @@ import { CourseFrinavBarComponent } from './course-frinav-bar/course-frinav-bar.
 import { FriendsViewComponent } from './friends-view/friends-view.component';
 import { EmpPortalComponent } from './emp-portal/emp-portal.component';
 import { EmpRegisterComponent } from './emp-register/emp-register.component';
+import { AddCourseComponent } from './add-course/add-course.component';
+import { NavBaraddCourseFriendComponent } from './nav-baradd-course-friend/nav-baradd-course-friend.component';
 
 const myRoute:Routes = [{path:"",component:HomePageComponent},
                         {path:"admin",component:AdminPortalComponent},
@@ -20,7 +22,9 @@ const myRoute:Routes = [{path:"",component:HomePageComponent},
                         {path:"coursefrinavBar",component:CourseFrinavBarComponent},
                         {path:"viewAllFriends",component:FriendsViewComponent},
                         {path:"emp",component:EmpPortalComponent},
-                        {path:"register",component:EmpRegisterComponent},]
+                        {path:"register",component:EmpRegisterComponent},
+                        {path:"addcourse",component:AddCourseComponent},
+                        ]
 
 @NgModule({
   declarations: [
@@ -31,7 +35,9 @@ const myRoute:Routes = [{path:"",component:HomePageComponent},
     CourseFrinavBarComponent,
     FriendsViewComponent,
     EmpPortalComponent,
-    EmpRegisterComponent
+    EmpRegisterComponent,
+    AddCourseComponent,
+    NavBaraddCourseFriendComponent,
   ],
   imports: [
     BrowserModule,

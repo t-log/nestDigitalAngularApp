@@ -10,4 +10,6 @@ export class ApiService {
   fetchCourses=()=>{return this.http.get("http://mylinkurcodesapp.herokuapp.com/getcourses")}
   fetchFriends=()=>{return this.http.get("https://dummyapifriends.herokuapp.com/view")}
   fetchEmployee=()=>{return this.http.get("https://dummyapifriends.herokuapp.com/view")}
+
+  addCourses=(dataToSend:any)=>{return this.http.post("https://mylinkurcodesapp.herokuapp.com/addcourse",dataToSend)}
 }
