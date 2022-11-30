@@ -1,0 +1,10 @@
+<app-course-frinav-bar></app-course-frinav-bar>
+<div class="card" style="width: 18rem;" *ngFor="let i of data">
+    <div class="card-body">
+    <p class="card-text">Id:{{i._id}}</p>
+      <h5 class="card-title">Name:{{i.name}}</h5>
+      <p class="card-text">Friend Name:{{i.friendName}}</p>
+      <p class="card-text">Friend Nick Name:{{i.friendNickName}}</p>
+      <p class="card-text">Describe your Friend:{{i.DescribeYourFriend}}</p>
+    </div>
+  </div>

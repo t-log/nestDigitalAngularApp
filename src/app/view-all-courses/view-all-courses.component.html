@@ -1,0 +1,25 @@
+<app-course-frinav-bar></app-course-frinav-bar>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Course Title</th>
+        <th scope="col">Course Description</th>
+        <th scope="col">Instructor</th>
+        <th scope="col">Course Duration</th>
+        <th scope="col">Course Date</th>
+        <th scope="col">Course Venue</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data">
+        <td>{{i._id}}</td>
+        <td>{{i.courseTitle}}</td>
+        <td>{{i.courseDescription}}</td>
+        <td>{{i.Instructor}}</td>
+        <td>{{i.courseDuration}}</td>
+        <td>{{i.courseDate}}</td>
+        <td>{{i.courseVenue}}</td>
+      </tr>
+    </tbody>
+  </table>

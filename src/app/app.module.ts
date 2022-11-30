@@ -5,19 +5,35 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { AdminPortalComponent } from './admin-portal/admin-portal.component';
+import { FormsModule } from '@angular/forms';
+import { ViewAllCoursesComponent } from './view-all-courses/view-all-courses.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CourseFrinavBarComponent } from './course-frinav-bar/course-frinav-bar.component';
+import { FriendsViewComponent } from './friends-view/friends-view.component';
 
-const myRoute:Routes = [{path:"",component:HomePageComponent}]
+const myRoute:Routes = [{path:"",component:HomePageComponent},
+                        {path:"admin",component:AdminPortalComponent},
+                        {path:"viewAllCourses",component:ViewAllCoursesComponent},
+                        {path:"coursefrinavBar",component:CourseFrinavBarComponent},
+                        {path:"viewAllFriends",component:FriendsViewComponent},]
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    AdminPortalComponent,
+    ViewAllCoursesComponent,
+    CourseFrinavBarComponent,
+    FriendsViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],
