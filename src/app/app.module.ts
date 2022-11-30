@@ -15,6 +15,7 @@ import { EmpPortalComponent } from './emp-portal/emp-portal.component';
 import { EmpRegisterComponent } from './emp-register/emp-register.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { NavBaraddCourseFriendComponent } from './nav-baradd-course-friend/nav-baradd-course-friend.component';
+import { AddFriendComponent } from './add-friend/add-friend.component';
 
 const myRoute:Routes = [{path:"",component:HomePageComponent},
                         {path:"admin",component:AdminPortalComponent},
@@ -24,6 +25,7 @@ const myRoute:Routes = [{path:"",component:HomePageComponent},
                         {path:"emp",component:EmpPortalComponent},
                         {path:"register",component:EmpRegisterComponent},
                         {path:"addcourse",component:AddCourseComponent},
+                        {path:"addFriend",component:AddFriendComponent},
                         ]
 
 @NgModule({
@@ -38,6 +40,7 @@ const myRoute:Routes = [{path:"",component:HomePageComponent},
     EmpRegisterComponent,
     AddCourseComponent,
     NavBaraddCourseFriendComponent,
+    AddFriendComponent,
   ],
   imports: [
     BrowserModule,

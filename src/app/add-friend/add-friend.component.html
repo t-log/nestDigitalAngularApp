@@ -1,0 +1,29 @@
+<app-nav-baradd-course-friend></app-nav-baradd-course-friend>
+<div class="container">
+    <div class="row">
+        <div class="mt-2 col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <!-- div.row.g-3>div.col.col-12.col-sm-6.col-md-4.col-lg-3.col-xl-3.col-xxl-3 -->
+            <h1>Add Friend</h1>
+            <div class="col col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">Name</label>
+                <input name="name" [(ngModel)]="name" type="text" id="" class="form-control">
+            </div>
+            <div class="col col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">Friend Name</label>
+                <input name="friendName" [(ngModel)]="friendName" type="text" id="" class="form-control">
+            </div>
+            <div class="col col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">Describe your friend</label>
+                <textarea name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend" class="form-control" id="" cols="30" rows="2"></textarea>
+            </div>
+            <div class="col col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">Friend Nick Name</label>
+                <input name="friendNickName" [(ngModel)]="friendNickName" type="text" id="" class="form-control">
+            </div>
+            <div class="col col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <button (click)="readValues()" class="mt-3 btn btn-primary">Add friend</button>
+            </div>
+        </div>
+    </div>
+</div>
+
