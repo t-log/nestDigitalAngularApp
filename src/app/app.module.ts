@@ -11,12 +11,16 @@ import { ViewAllCoursesComponent } from './view-all-courses/view-all-courses.com
 import { HttpClientModule } from '@angular/common/http';
 import { CourseFrinavBarComponent } from './course-frinav-bar/course-frinav-bar.component';
 import { FriendsViewComponent } from './friends-view/friends-view.component';
+import { EmpPortalComponent } from './emp-portal/emp-portal.component';
+import { EmpRegisterComponent } from './emp-register/emp-register.component';
 
 const myRoute:Routes = [{path:"",component:HomePageComponent},
                         {path:"admin",component:AdminPortalComponent},
                         {path:"viewAllCourses",component:ViewAllCoursesComponent},
                         {path:"coursefrinavBar",component:CourseFrinavBarComponent},
-                        {path:"viewAllFriends",component:FriendsViewComponent},]
+                        {path:"viewAllFriends",component:FriendsViewComponent},
+                        {path:"emp",component:EmpPortalComponent},
+                        {path:"register",component:EmpRegisterComponent},]
 
 @NgModule({
   declarations: [
@@ -25,7 +29,9 @@ const myRoute:Routes = [{path:"",component:HomePageComponent},
     AdminPortalComponent,
     ViewAllCoursesComponent,
     CourseFrinavBarComponent,
-    FriendsViewComponent
+    FriendsViewComponent,
+    EmpPortalComponent,
+    EmpRegisterComponent
   ],
   imports: [
     BrowserModule,
