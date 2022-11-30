@@ -15,11 +15,11 @@ export class EmpPortalComponent {
 
   getempData=()=>
   {
-    if(this.empid=="" && this.password=="")
+    if(this.empid=="1122" && this.password=="12345")
     {
       alert("Login successful")
-      this.empid=""
-      this.password=""
+
+      this.router.navigate(['/addcourse'])
 
     }
     else
