@@ -1,10 +1,24 @@
 <app-course-frinav-bar></app-course-frinav-bar>
-<div class="card" style="width: 18rem;" *ngFor="let i of data">
-    <div class="card-body">
-    <p class="card-text">Id:{{i._id}}</p>
-      <h5 class="card-title">Name:{{i.name}}</h5>
-      <p class="card-text">Friend Name:{{i.friendName}}</p>
-      <p class="card-text">Friend Nick Name:{{i.friendNickName}}</p>
-      <p class="card-text">Describe your Friend:{{i.DescribeYourFriend}}</p>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="row g-3">
+          <div *ngFor="let i of data" class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+              <p class="card-text">Id:{{i._id}}</p>
+                <h5 class="card-title">Name:{{i.name}}</h5>
+                <p class="card-text">Friend Name:{{i.friendName}}</p>
+                <p class="card-text">Friend Nick Name:{{i.friendNickName}}</p>
+                <p class="card-text">Describe your Friend:{{i.DescribeYourFriend}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+</div>
+
+
+
+
